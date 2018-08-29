@@ -1,2 +1,4 @@
+docker run -d  -p 5432:5432 -v $PWD/database:/var/lib/postgresql/data postgres
 heroku addons:create heroku-postgresql:hobby-dev
 heroku run rake db:migrate
+
