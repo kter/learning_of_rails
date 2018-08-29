@@ -8,9 +8,9 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.4'
+gem 'pg', '~> 0.18.4'
 
 group :development, :test do
-  gem 'sqlite3',      '1.3.13'
   gem 'byebug', '9.0.6', platform: :mri
 end
 
@@ -23,3 +23,5 @@ end
 
 # Windows環境ではtzinfo-dataというgemを含める必要がありますgem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.5.1"
