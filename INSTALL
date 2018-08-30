@@ -3,7 +3,8 @@
 for local develop
 
 ```
-docker run -d  -p 5432:5432 -v $PWD/db/psql:/var/lib/postgresql/data postgres
+docker run -d --name psql-server  -p 5432:5432 -v $PWD/db/psql:/var/lib/postgresql/data postgres
+docker run -it --rm --link psql-server:postgres postgres psql -h postgres -Upostgres
 ```
 
 heroku deploy
